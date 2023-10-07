@@ -1,0 +1,1161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+/* ================BASE================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: url("./images/pattern1.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0293dbb3;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.938rem;
+}
+
+/* ================HEADER================ */
+
+section.header {
+  background: linear-gradient(rgba(2, 147, 219, 0.509), rgba(0, 0, 0, 0.7)),
+    url("./images/hero-mobile2.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* ================NAV================ */
+
+nav {
+  background-color: #ffffff;
+  height: 10vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 20px #00000082;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.nav_logo img {
+  width: 22px;
+}
+
+.nav_logo h1 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 0px;
+}
+
+.nav_logo span {
+  color: #0291db;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul a {
+  color: #000;
+}
+
+nav ul li {
+  font-weight: bold;
+}
+
+.nav_toggle {
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav_menu {
+  position: fixed;
+  top: 10vh;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: #ffffffdb;
+  box-shadow: 0 5px 20px #000;
+  padding: 3rem;
+  transition: 0.4s;
+  z-index: 10;
+  border-top-left-radius: 1rem;
+}
+
+.nav_menu.active {
+  right: 0;
+}
+
+.nav_menu a {
+  padding: 0.5rem;
+}
+
+.nav_menu a.active,
+.nav_menu a:hover {
+  border-bottom: 5px solid #0291db;
+  transition: 0.5s;
+}
+
+.nav_menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+.nav_menu ul button {
+  background-color: #0291db;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav_menu .ri-close-line {
+  font-size: 2rem;
+  margin: 20px 0 0 20px;
+}
+
+/* ==================HERO BANNER TEXT============== */
+
+div.hero_text {
+  height: 90vh;
+  padding-top: 10rem;
+  transition: all 1.5s ease;
+}
+
+div.hero_text h1 {
+  font-size: 45px;
+  margin: 0 20px;
+  color: #fff;
+}
+
+div.hero_text p {
+  font-size: 16px;
+  margin: 30px 20px;
+  color: #fff;
+  line-height: 1.6rem;
+}
+
+div.hero_text button {
+  margin: 10px 20px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+div.hero_text button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ==================CARD BELOW HEADER============== */
+
+div.content {
+  margin: 15px;
+  background-color: #fff;
+  margin-top: 10vh;
+}
+
+div.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+div.content h2 {
+  font-size: 18px;
+  margin: 20px 0 0 20px;
+}
+
+div.content p {
+  font-size: 18px;
+  margin: 30px 0 30px 20px;
+  opacity: 60%;
+}
+
+div.content button {
+  margin-top: 10px;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #33333333;
+  padding: 12px;
+  margin: 10px 0 20px 20px;
+}
+
+div.content button:hover {
+  background-color: #0291db;
+  color: #fff;
+  border: none;
+}
+
+div.image {
+  position: relative;
+  overflow: hidden;
+}
+
+div.content .link_card {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  font-size: 3.5rem;
+  background-color: #0293dba3;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+div.image:hover .link_card {
+  left: 0;
+}
+
+/* ==================OUR SERVICES============== */
+
+section.our_services {
+  margin: 0 20px;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+section.our_services h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 32px;
+}
+
+div.service_link ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+  height: auto;
+}
+
+div.service_link ul li {
+  padding: 15px;
+}
+
+div.service_link ul li a:hover,
+div.service_link ul li a.active {
+  border-bottom: 3px solid #0291db;
+  color: #0291db;
+  font-weight: bold;
+}
+
+div.service_link ul li a {
+  color: #333333c4;
+}
+
+section.our_services img {
+  width: 100%;
+}
+
+section.our_services h2 {
+  margin-bottom: 20px;
+}
+
+section.our_services p {
+  opacity: 70%;
+  line-height: 1.6rem;
+}
+
+section.our_services button {
+  padding: 15px 25px;
+  background-color: #0291db;
+  border: 2px solid #0291db;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+section.our_services button:hover {
+  background-color: transparent;
+  color: #0291db;
+}
+
+/* ==================SERVICE CARD================ */
+
+div.service_card {
+  border: 0.2px solid #33333358;
+  margin: 20px 10px;
+  padding: 20px;
+  height: 50vh;
+}
+
+div.service_card:hover {
+  box-shadow: 0 5px 20px #3333338d;
+  transition: all 0.4s;
+}
+
+div.service_card .service_icons {
+  color: #0291db;
+  font-size: 60px;
+  height: 55%;
+  padding: 18px;
+}
+
+div.service_card .service_icons i {
+  position: relative;
+  top: 40%;
+}
+
+div.service_card h3 {
+  padding-bottom: 2rem;
+}
+
+div.service_card p {
+  padding-bottom: 3rem;
+}
+
+/* ==================CONTACT US================ */
+
+.service_patholab {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.447), rgba(0, 0, 0, 0.466)),
+    url("./images/background\ 1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 30px;
+  height: 80vh;
+}
+
+.service_patholab .services {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.service_patholab h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.service_patholab h1 span.break {
+  display: inline-block;
+  color: #fff;
+  text-align: none;
+}
+
+.service_patholab button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  width: 60%;
+  cursor: pointer;
+}
+
+.service_patholab button:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+
+.immunology {
+  background: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.313)),
+    url("./images/fabric--plaid--1920x1080.png");
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.immunology h3 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.immunology ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.immunology ul div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.immunology a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ==================RELIABLE & HIGH QUALITY================ */
+
+section.reliable {
+  margin: 20px;
+  margin-top: 15vh;
+}
+
+section.reliable div.reliable_container {
+  margin-bottom: 50px;
+}
+
+.reliable img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.reliable div.image_reliable {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+section.reliable div.play {
+  display: grid;
+  place-content: center;
+  color: #0291db;
+  font-size: 10rem;
+  background: linear-gradient(140deg, transparent 53px, #00000077 0);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.ri-play-circle-fill {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(128, 128, 128, 0) 53%
+  );
+}
+
+section.reliable h1 {
+  font-size: 40px;
+}
+
+section.reliable hr {
+  display: inline-block;
+  width: 15%;
+  background-color: #0291db;
+  height: 1px;
+}
+
+section.reliable h4 {
+  color: #0291db;
+  margin: 20px 10%;
+}
+
+section.reliable h3 {
+  line-height: 1.6rem;
+  opacity: 80%;
+}
+
+/* ==================REVIEW SECTION================ */
+
+section.review {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.737),
+      rgba(0, 0, 0, 0.288)
+    ),
+    url("./images/background\ 8.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+  margin-bottom: 50px;
+  padding: 4rem 1rem;
+}
+
+section.review div.review_box {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100%;
+}
+
+section.review h1 {
+  font-size: 5rem;
+  color: #00aaff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+section.review p {
+  color: #fff;
+  font-size: 1.25rem;
+  text-shadow: 0.5px 0.5px 1px #000;
+  width: 25ch;
+  line-height: 2.1rem;
+}
+
+section.review div.client img {
+  width: 20vw;
+  border-radius: 50%;
+  margin-left: 1.6rem;
+  border: 0.3rem solid #0291db;
+}
+
+section.review div.client span.cus_name {
+  color: #fff;
+  display: block;
+  margin-top: 0.6rem;
+  margin-left: 0.8rem;
+  text-shadow: 0.5px 0.5px 1px #000;
+}
+
+section.review div.client span.certified {
+  color: #0291db;
+  font-size: 0.8rem;
+  background: #fff;
+  display: inline-block;
+  padding: 0.3rem;
+  margin-top: 0.6rem;
+  border-radius: 1rem;
+}
+
+/* ==================NEWS LETTER================ */
+
+section.news_letter {
+  margin: 10px;
+  max-width: 100%;
+}
+
+h1.latest_news {
+  text-align: center;
+  font-size: 30px;
+}
+
+section.news_letter div {
+  margin: 10px;
+  background-color: #fff;
+  border: 0.3px solid #33333334;
+  position: relative;
+}
+
+section.news_letter div img {
+  width: 100%;
+}
+
+section.news_letter div img:hover {
+  filter: brightness(50%);
+  scale: 1.05;
+  transition: 0.4s ease;
+}
+
+section.news_letter div h2 {
+  margin: 15px;
+}
+
+section.news_letter div p {
+  margin: 10px;
+  opacity: 55%;
+  font-size: 14px;
+}
+
+section.news_letter div h3 {
+  margin: 30px 0 20px 10px;
+}
+
+section.news_letter div h3:hover {
+  color: #0291db;
+}
+
+section.news_letter div button {
+  position: absolute;
+  top: 2%;
+  left: 4%;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #0291db;
+}
+
+/* ==================SUBSCRIBE SECTION================ */
+
+div.subscribe_box {
+  margin: 20px 20px -50px 20px;
+  background-color: #0291db;
+  padding: 30px;
+  position: relative;
+  z-index: 10;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.subscribe_box h2 {
+  font-size: 32px;
+}
+
+div.subscribe_box input {
+  background-color: #ffffff58;
+  color: #fff;
+}
+
+div.subscribe_box ::placeholder {
+  color: #f5f5f5;
+  font-weight: bold;
+
+  background-color: transparent;
+}
+
+div.subscribe_box input,
+.subscribe_box button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+div.subscribe {
+  color: #fff;
+}
+
+div.email form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+}
+
+/* ==================FOOTER SECTION================ */
+
+footer {
+  padding: 30px;
+  background-color: black;
+  color: #ffffff;
+  padding-top: 80px;
+}
+
+footer div.footer div {
+  margin: 20px 0 10px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+span {
+  color: #0291db;
+}
+
+footer h2 {
+  font-size: 32px;
+}
+
+footer h2,
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+div.social_medias {
+  display: flex;
+  column-gap: 5%;
+}
+
+div.icons {
+  color: #fff;
+  padding: 16px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+div.icons:hover {
+  background-color: #0291db;
+}
+
+div.foot3 p {
+  margin: 20px 0;
+}
+
+.ri-calendar-2-line {
+  color: #0291db;
+}
+
+.foot_mar {
+  padding-top: 30px;
+}
+
+/* ==================BIG SCREEN VIEW============== */
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 0.804rem;
+    background-image: url("./images/pattern1.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+  }
+
+  /* =========HEADER========= */
+
+  section.header {
+    background: linear-gradient(rgba(2, 147, 219, 0.742), rgba(0, 0, 0, 0.413)),
+      url("./images/banner_desktop.png");
+    background-size: cover;
+  }
+
+  nav {
+    flex-direction: row;
+    height: 12vh;
+    background-image: url("./images/pattern1.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .nav_logo h1 {
+    font-size: 1.675rem;
+    margin-top: -3.35px;
+  }
+
+  .nav_toggle {
+    display: none;
+  }
+
+  .nav_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85vw;
+    height: 12vh;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nav_menu ul {
+    flex-direction: row;
+    column-count: 0;
+    height: 12vh;
+  }
+
+  .nav_menu ul li {
+    font-size: 0.871rem;
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    display: grid;
+    place-content: center;
+  }
+
+  .nav_menu ul li:hover,
+  .nav_menu ul li.active {
+    background: #0291db;
+  }
+
+  .nav_menu ul li:nth-child(7):hover {
+    background: transparent;
+  }
+
+  .nav_menu ul li a {
+    padding: 3.35rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-wrap: nowrap;
+  }
+
+  .nav_menu ul li a:hover,
+  .nav_menu ul li a.active {
+    border: none;
+    color: #fff;
+  }
+
+  .nav_menu ul button {
+    padding: 0.737rem;
+    font-size: 0.804rem;
+    border-radius: 6.7px;
+    box-shadow: 2.01px 2.01px 2.01px #000;
+  }
+
+  /* =========HERO SECTION========= */
+
+  div.hero_text {
+    padding: 5.36rem;
+    padding-top: 9.38rem;
+  }
+
+  div.hero_text h1 {
+    font-size: 3.35rem;
+  }
+
+  div.hero_text p {
+    font-size: 0.871rem;
+    max-width: 60ch;
+  }
+
+  div.hero_text button {
+    padding: 20.1px 40.2px;
+    font-size: 0.871rem;
+    border-radius: 6.7px;
+    border: 2.144px solid #fff;
+  }
+
+  /* ========CARD BELOW HEADER========= */
+
+  section.key_features div.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 3.35em;
+    height: 90vh;
+  }
+
+  div.content {
+    box-shadow: 0.67px 0.67px 6.7px #33333367;
+  }
+
+  div.content div.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.content h2 {
+    font-size: 0.871rem;
+    margin: 26.8px 0 0 26.8px;
+  }
+
+  div.content p {
+    font-size: 0.938rem;
+    width: 23ch;
+    margin: 26.8px 0 0 26.8px;
+    opacity: 60%;
+  }
+
+  div.content button {
+    font-size: 0.804rem;
+    padding: 0.804rem;
+    margin: 20.1px 0 0 20.1px;
+    width: 13.4rem;
+    border: 1.005px solid #33333388;
+  }
+
+  /* ========OUR SERVICE========= */
+
+  section.our_services {
+    background-color: transparent;
+  }
+
+  section.our_services h1 {
+    font-size: 2.345rem;
+    margin: 5.36rem 0;
+  }
+
+  div.service_link ul {
+    background: #fff;
+    margin: 0 1.34rem;
+    box-shadow: 0.67px 0.67px 6.7px #33333367;
+  }
+
+  div.service_link ul li a {
+    font-size: 0.871rem;
+    font-weight: bold;
+  }
+
+  div.service_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+    margin: 3.35rem 1.34rem;
+  }
+
+  div.service_main div.service_text {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+
+  div.service_main div.service_text h2 {
+    font-size: 1.809rem;
+  }
+
+  div.service_main div.service_text p {
+    font-size: 0.938rem;
+    line-height: 2.01rem;
+    opacity: 95%;
+  }
+
+  div.service_main div.service_text button {
+    width: 15vw;
+    font-size: 1.005rem;
+    padding: 1.072rem;
+    margin-top: -1.34rem;
+  }
+
+  .service_card_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.34rem;
+    margin: 0 1.34rem;
+    margin-bottom: 4.02rem;
+  }
+
+  .service_card_box .service_card {
+    background: #fff;
+    border: 1.34px solid #33333342;
+    border-radius: 1.34rem;
+    margin: 6.7px 6.7px;
+  }
+
+  .service_card .service_icons {
+    height: 40%;
+  }
+
+  .service_card .service_icons i {
+    font-size: 3.35rem;
+  }
+
+  .service_card h3 {
+    font-size: 1.139rem;
+  }
+
+  .service_card p {
+    margin-top: -1rem;
+    font-size: 0.938rem;
+    width: 34ch;
+    line-height: 3.35rem;
+  }
+
+  /* ========CONTACT US========= */
+
+  div.services h1 {
+    font-size: 3.35rem;
+  }
+
+  div.services button {
+    width: 20%;
+    margin-top: -10.05rem;
+    padding: 1.34rem;
+    font-size: 1.005rem;
+  }
+
+  div.immunology {
+    margin: -5.36rem 2.68rem 0 2.68rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.132)),
+      url("./images/pattern5.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  div.target {
+    padding: 3.015rem;
+  }
+
+  div.target h3 {
+    font-size: 1.876rem;
+    margin-bottom: 3.35rem;
+  }
+
+  div.immunology .list_box ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  div.immunology .contact_us_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.34rem;
+  }
+
+  div.immunology .contact_us_list li a {
+    font-size: 0.938rem;
+  }
+
+  /* ========RELIABLE & HIGH QUALITY========= */
+
+  div.reliable_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7vw;
+    margin: 3.35rem 1.34rem;
+  }
+
+  section.reliable div.play {
+    font-size: 10.05rem;
+    background: linear-gradient(137deg, transparent 88px, #00000077 0);
+    position: absolute;
+  }
+
+  div.reliable_text h1 {
+    font-size: 3.35rem;
+  }
+
+  div.reliable_text h4 {
+    font-size: 1.005rem;
+  }
+
+  div.reliable_text h4 hr {
+    height: 0.25rem;
+  }
+
+  div.reliable_text h3 {
+    font-size: 1.072rem;
+    line-height: 1.675rem;
+    margin-top: 2.01rem;
+  }
+
+  div.reliable_text p {
+    font-size: 0.938rem;
+    line-height: 1.675rem;
+    margin-top: 3.35rem;
+  }
+
+  /* ========REVIEW SECTION========= */
+
+  section.review {
+    padding: 2.01rem 3.35rem;
+  }
+
+  section.review h1 {
+    font-size: 4.69rem;
+  }
+
+  section.review p {
+    font-size: 1.072rem;
+    width: 60ch;
+    line-height: 2.68rem;
+    padding-top: 2.01rem;
+  }
+
+  section.review div.client img {
+    width: 6vw;
+    margin-left: 1.139rem;
+    border: 0.134rem solid #0291db;
+  }
+
+  section.review div.client span.cus_name {
+    margin-left: 0.536rem;
+    font-size: 0.871rem;
+  }
+
+  section.review div.client span.certified {
+    font-size: 0.67rem;
+    padding: 0.268rem;
+    margin-top: 0.469rem;
+  }
+
+  /* ========NEWS LETTER========= */
+
+  section.news_letter div.news_letter_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.34rem;
+    margin: 3.35rem 1.34rem;
+    box-shadow: 1.34px 1.34px 13.4px #00000078;
+  }
+
+  section.news_letter div.news_letter_card div {
+    height: 90vh;
+    margin: 1.34rem;
+
+    box-shadow: 0.335px 0.335px 2.68px #00000078;
+  }
+
+  section.news_letter div.news_letter_card div h2,
+  section.news_letter div.news_letter_card div h3 {
+    padding-left: 0.67rem;
+  }
+
+  section.news_letter div.news_letter_card div p {
+    font-size: 0.871rem;
+    line-height: 1.206rem;
+    width: 35ch;
+    padding-left: 0.67rem;
+    margin-top: 2.01rem;
+    margin-bottom: 2.01rem;
+  }
+
+  section.news_letter div.news_letter_card button {
+    font-size: 0.67rem;
+    padding: 0.67rem;
+  }
+
+  /* ========SUBSCRIBE SECTION========= */
+
+  div.subscribe_box {
+    margin: 13.4px 40.2px -33.5px 40.2px;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+  }
+
+  div.subscribe_box h2 {
+    font-size: 2.01rem;
+  }
+
+  div.email form {
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 0.67rem;
+  }
+
+  div.subscribe_box input,
+  .subscribe_box button {
+    width: 30vw;
+    padding: 1.675rem;
+    font-size: 0.67rem;
+  }
+
+  /* ========FOOTER SECTION========= */
+  .footer {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1.2fr;
+    justify-content: space-between;
+    column-gap: 6.7rem;
+    padding-left: 13.4px;
+    padding-right: 13.4px;
+    padding-bottom: 20.1px;
+  }
+
+  div.icons {
+    padding: 16.75px;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 13.4px;
+  }
+}
