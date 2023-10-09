@@ -193,14 +193,14 @@ div.hero_text button:hover {
 
 section.research {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 90;
-    display: none;
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  display: none;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
 }
 
 section.research div.research_form {
@@ -240,8 +240,8 @@ section.research form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  justify-content: space-around;
-  row-gap: 2.3vh;
+  justify-content: space-between;
+  height: 87%;
 }
 
 section.research form input[type=text],
@@ -251,6 +251,7 @@ section.research form input[type=text],
   padding: .7rem;
   border-radius: 1rem;
   border: 1px solid #333;
+  outline: none;
 }
 
 section.research form input[type=radio] {
@@ -267,6 +268,7 @@ section.research form fieldset {
 
 section.research form p {
   font-size: .8rem;
+  line-height: 1rem;
 }
 
 section.research form button {
