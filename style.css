@@ -240,7 +240,8 @@ section.research form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  gap: 1.3rem;
+  justify-content: space-around;
+  row-gap: 2.3vh;
 }
 
 section.research form input[type=text],
