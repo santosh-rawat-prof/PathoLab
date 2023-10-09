@@ -1087,7 +1087,7 @@ div.foot3 p {
   }
 
   section.news_letter div.news_letter_card div {
-    height: 90vh;
+    height: 80vh;
     margin: 1.34rem;
 
     box-shadow: 0.335px 0.335px 2.68px #00000078;
@@ -1098,7 +1098,15 @@ div.foot3 p {
     padding-left: 0.67rem;
   }
 
+  
+  section.news_letter div.news_letter_card div h3 {
+    position: absolute;
+    bottom: 0;
+  }
+
   section.news_letter div.news_letter_card div p {
+    position: absolute;
+    top: 52%;
     font-size: 0.871rem;
     line-height: 1.206rem;
     width: 35ch;
