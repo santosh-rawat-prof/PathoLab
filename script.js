@@ -6,9 +6,16 @@ hamburg.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-// closeBtn.addEventListener("click", () => {
-//     navMenu.classList.remove("active");
-// })
+function open_research() {
+  document.getElementById("research").style.display="block";
+  document.getElementById("blur").style.display="block";
+}
+
+function close_research() {
+  document.getElementById("research").style.display="none";
+  document.getElementById("blur").style.display="none";
+  navMenu.classList.remove("active");
+}
 
 let slideImg = document.querySelector("#header");
 

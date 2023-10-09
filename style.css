@@ -108,7 +108,7 @@ nav ul li {
   top: 10vh;
   right: -100%;
   width: 70%;
-  height: 100vh;
+  height: 90vh;
   background-color: #ffffffdb;
   box-shadow: 0 5px 20px #000;
   padding: 3rem;
@@ -189,6 +189,93 @@ div.hero_text button:hover {
   color: #000;
 }
 
+/* ==================RESEARCH PAGE============== */
+
+section.research {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    display: none;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+}
+
+section.research div.research_form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  backdrop-filter: blur(25px);
+  height: 90vh;
+  border: 1px solid #333;
+  border-radius: 2rem;
+  width: 90%;
+  display: none;
+}
+
+section.research div.join {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+section.research div.join p {
+  font-size: .9rem;
+}
+
+section.research div.join h1 {
+  color: #0291db;
+}
+
+section.research div.join i {
+  font-size: 2em;
+}
+
+section.research form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.3rem;
+}
+
+section.research form input[type=text],
+[type=password],
+[type=date] {
+  width: 100%;
+  padding: .7rem;
+  border-radius: 1rem;
+  border: 1px solid #333;
+}
+
+section.research form input[type=radio] {
+  margin-left: -3rem;
+}
+
+section.research form fieldset {
+  border: none;
+  padding-top: .9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.research form p {
+  font-size: .8rem;
+}
+
+section.research form button {
+  padding: .7rem;
+  border-radius: 1rem;
+  border: 1px solid #0291db;
+  background-color: #0291db;
+  color: #fff;
+}
+
 /* ==================CARD BELOW HEADER============== */
 
 div.content {
@@ -219,14 +306,15 @@ div.content button {
   font-size: 15px;
   background-color: #fff;
   border: 1px solid #33333333;
-  padding: 12px;
+  width: 90%;
+  padding: 1rem;
   margin: 10px 0 20px 20px;
 }
 
 div.content button:hover {
   background-color: #0291db;
+  border: 1px solid #0291db;
   color: #fff;
-  border: none;
 }
 
 div.image {
@@ -464,11 +552,9 @@ section.reliable div.play {
 }
 
 .ri-play-circle-fill {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 51%,
-    rgba(128, 128, 128, 0) 53%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 255, 255, 1) 51%,
+      rgba(128, 128, 128, 0) 53%);
 }
 
 section.reliable h1 {
@@ -495,11 +581,9 @@ section.reliable h3 {
 /* ==================REVIEW SECTION================ */
 
 section.review {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.737),
-      rgba(0, 0, 0, 0.288)
-    ),
+      rgba(0, 0, 0, 0.288)),
     url("./images/background\ 8.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -869,7 +953,7 @@ div.foot3 p {
   div.content button {
     font-size: 0.804rem;
     padding: 0.804rem;
-    width: 87%; 
+    width: 87%;
     border: 1.005px solid #33333388;
   }
 
@@ -1098,7 +1182,7 @@ div.foot3 p {
     padding-left: 0.67rem;
   }
 
-  
+
   section.news_letter div.news_letter_card div h3 {
     position: absolute;
     bottom: 0;
