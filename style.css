@@ -852,25 +852,24 @@ div.foot3 p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: left;
   }
 
   div.content h2 {
     font-size: 0.871rem;
-    margin: 26.8px 0 0 26.8px;
+    width: 87%;
   }
 
   div.content p {
     font-size: 0.938rem;
-    width: 23ch;
-    margin: 26.8px 0 0 26.8px;
+    width: 87%;
     opacity: 60%;
   }
 
   div.content button {
     font-size: 0.804rem;
     padding: 0.804rem;
-    margin: 20.1px 0 0 20.1px;
-    width: 13.4rem;
+    width: 87%; 
     border: 1.005px solid #33333388;
   }
 
