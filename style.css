@@ -203,6 +203,11 @@ section.research {
   backdrop-filter: blur(10px);
 }
 
+
+section.research i {
+  cursor: pointer;
+}
+
 section.research div.research_form {
   position: fixed;
   top: 50%;
@@ -920,6 +925,38 @@ div.foot3 p {
     font-size: 0.871rem;
     border-radius: 6.7px;
     border: 2.144px solid #fff;
+  }
+
+  /* ========RESEARCH PAGE========= */
+
+  section.research div.research_form {
+    width: 40%;
+  }
+
+  section.research div.join {
+    padding: 1.5rem 2rem 0 2rem;
+  }
+
+  section.research div.join h1 {
+    font-size: 1.5rem;
+  }
+
+  section.research form {
+    padding: 2rem;
+  }
+
+  section.research form div.login_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  section.research form div.login_name input {
+    width: 49%;
+  }
+
+  section.research form input[type=radio] {
+    margin-left: -7rem;
   }
 
   /* ========CARD BELOW HEADER========= */
