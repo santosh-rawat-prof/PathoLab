@@ -249,6 +249,13 @@ section.research form {
   height: 87%;
 }
 
+section.research form div.login_name {
+  display: flex;
+  flex-direction: column;
+  height: 18.1%;
+  justify-content: space-between;
+}
+
 section.research form input[type=text],
 [type=password],
 [type=date] {
