@@ -956,6 +956,7 @@ div.foot3 p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
   }
 
   section.research form div.login_name input {
